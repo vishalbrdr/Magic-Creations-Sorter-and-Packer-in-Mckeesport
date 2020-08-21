@@ -1,0 +1,196 @@
+.job {
+  margin: 0rem auto;
+  width: 75vw;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  margin-bottom: 7.5rem;
+  @media only screen and (max-width: 995px) {
+    margin: 0;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  &__nav {
+    display: flex;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      margin-right: 1.3rem;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #555;
+        &:hover {
+          color: var(--color-3);
+        }
+        i {
+          margin-left: 1.3rem;
+          font-size: 1rem;
+          color: white;
+          text-shadow: 1px 0 #555;
+        }
+      }
+    }
+  }
+  &-header {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 1px 1px -1px #555;
+    .banner {
+      font-size: 1rem;
+      display: flex;
+      width: max-content;
+      li {
+        list-style: none;
+        background-color: var(--color-pink-dark);
+        justify-content: center;
+        padding: 0.35rem 1.8rem;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+    .status {
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+      color: #2ea718;
+    }
+    .heading {
+      margin-top: 1rem;
+      display: grid;
+      grid-gap: 2.5rem;
+      grid-template-columns: 1fr min-content max-content;
+      @media only screen and (max-width: 995px) {
+       grid-template-columns: 1fr;
+       justify-items: center;
+       grid-gap: 1rem;   
+      }
+      &-name {
+        color: var(--heading-color);
+      }
+      &-like {
+        align-self: center;
+        font-size: 2.3rem;
+        color: var(--color-pink);
+        cursor: pointer;
+      }
+      &-btn {
+        border: none;
+        padding: 1.4rem 3.5rem;
+        background-color: var(--color-3);
+        border-radius: 20rem;
+        color: white;
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: 600;
+      @media only screen and (max-width: 995px) {
+        justify-self: stretch;
+        padding: 1rem;
+      }
+       
+        &:hover,
+        &:focus {
+          background: #4256ce;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .company {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-gap: 2rem;
+      &__brand {
+        display: grid;
+        grid-template-columns: min-content;
+        text-align: center;
+        font-size: 1.38rem;
+        color: #555;
+        grid-gap: 1rem;
+        img {
+          width: 9.8rem;
+          border: 1px solid #55555522;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .job__details {
+      color: #555;
+      display: grid;
+      grid-gap: 0.2rem;
+      h2 {
+        font-size: 2rem;
+        color: #262262;
+      }
+      & > :nth-child(2),
+      & > :nth-child(3) {
+        i {
+          margin-right: 1rem;
+        }
+      }
+      & > :nth-last-child(2) {
+        color: var(--color-pink);
+      }
+      & > :last-child {
+        color: #4256ce;
+        display: grid;
+        grid-gap: 1rem;
+        align-content: end;
+        grid-template-columns: repeat(4, max-content);
+        font-size: 1.4rem;
+        & > :nth-child(2) {
+          border-right: 1px solid #5555;
+          border-left: 1px solid #5555;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+  .job__description {
+    margin-top: 2rem;
+    color: #555;
+    h2 {
+      font-size: 1.8rem;
+    }
+    &-p {
+      margin-top: 2rem;
+      line-height: 1.8;
+    }
+    .posting-details {
+      font-size: 1.2rem;
+      margin-top: 0.6rem;
+      span {
+        padding: 0 1rem;
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+        &:nth-child(2) {
+          border-left: 1px solid;
+        }
+      }
+    }
+  }
+  .suggested-searches {
+    margin-top: 2rem;
+    color: #555;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+    div {
+      margin-top: 4rem;
+      span {
+        font-size: 1.2rem;
+        padding: 0.45rem 1.5rem;
+        background-color: #eee;
+        border-radius: 5rem;
+        margin-right: 2rem;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 4px currentColor;
+        }
+      }
+    }
+  }
+}

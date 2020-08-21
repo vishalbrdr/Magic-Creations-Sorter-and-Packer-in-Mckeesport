@@ -1,0 +1,31 @@
+:root {
+  --color-1: #4c2d79;
+  --color-2: #33276a;
+  --color-3: #4d64f8;
+  --heading-color: #262262;
+  --color-pink: #ff44a0;
+  --color-pink-dark: #d63283;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: 995px) {
+    font-size: 55%;
+  }
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+}
+.toggleclass {
+  display: block !important;
+}
+@import "./header";
+@import "./job.scss";
+@import "./footer";

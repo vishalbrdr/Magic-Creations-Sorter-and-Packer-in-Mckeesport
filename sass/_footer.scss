@@ -1,0 +1,107 @@
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom, var(--color-2) 40%, var(--color-1));
+  display: grid;
+  .logo {
+    margin: 2.4rem auto;
+    img {
+      width: 12.1rem;
+    }
+  }
+  .content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, max-content);
+    color: white;
+    justify-items: center;
+    grid-gap: 7rem;
+    @media only screen and (max-width: 995px) {
+      grid-template-columns: 1fr;
+      justify-content: start;
+      grid-gap: 1rem;
+      justify-items: start;
+    }
+    &-cols {
+      @media only screen and (max-width: 995px) {
+        border-bottom: 1px solid var(--color-3);
+        width: 100%;
+      }
+      h6 {
+        font-size: 1.8rem;
+        margin: 2.4rem 0;
+        cursor: pointer;
+        span {
+          display: none;
+          color: var(--color-2);
+          text-shadow: 0 1px 1px white;
+        }
+        @media only screen and (max-width: 995px) {
+          display: flex;
+          justify-content: space-between;
+          span {
+            display: block;
+            align-self: flex-end;
+          }
+        }
+      }
+      ul {
+        @media only screen and (max-width: 995px) {
+          display: none;
+        }
+        li {
+          list-style: none;
+          padding-bottom: 0.8rem;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          span {
+            color: var(--color-pink);
+          }
+        }
+      }
+    }
+  }
+  .socials {
+    display: flex;
+    text-align: center;
+    margin: 1rem auto;
+    a {
+      color: white;
+      text-decoration: none;
+      padding-left: 2rem;
+    }
+  }
+  .store {
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      cursor: pointer;
+      margin: 1rem;
+    }
+  }
+  .terms {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 1rem;
+    li {
+      list-style: none;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .copy {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    margin: 1.5rem 0;
+    justify-content: center;
+  }
+}
